@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="EstiloB.css">
+	<link rel="stylesheet" type="text/css" href="Contenedores.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+</head>
+
+<body>
+
+	<div id="back">
+	<aside id="ContPrin">
+		<div id="Box1">
+			<img src="imagenes/Banorte_logo2x.png" id="Logo">
+	</aside>
+
+<input type="checkbox" id="menu-toggle"/>
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+<a href="Atm.html" id="atmButton"><img src="imagenes/ATMicon.png" style="max-width: 75px; height: auto;"></a>
+
+  <div id="ContSec">
+
+  	<!--Este apartado pertenece al chatbot -->
+	<script type="text/javascript">
+  window.watsonAssistantChatOptions = {
+    integrationID: "b8d6d54c-f642-4858-8f70-e3a7afda6262", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "0053632e-6653-46b9-ae78-7730437c7a2a", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+	</script>
+
+<!-- Este apartado pertenece las cartas de descripcion general -->
+	<div class="card">
+    <h2>Título de la tarjeta</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+    </div>	
+    <div class="card">
+    <h2>Título de la tarjeta</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+	</div>
+	<div class="card">
+    <h2>Título de la tarjeta</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+	</div>
+
+<!-- Este apartado pertenece al buscador atm -->
+</div> <!-- fin de seccion dos -->
+</body>
+</html>

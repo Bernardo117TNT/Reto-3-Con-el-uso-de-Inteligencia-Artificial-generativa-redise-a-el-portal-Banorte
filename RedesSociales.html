@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel Giratório - @programador.cs</title>
+
+    <style>
+        * {
+            font-family: "Verdana", sans-serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+            color: #fff;
+        }
+
+        body {
+            margin: 2rem;
+            background-color: #212123;
+        }
+
+
+        .carrosel {
+            -webkit-perspective: 250px;
+            -moz-perspective: 220px;
+            width: 400px;
+            height: 200px;
+            top: 100px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes efeitoCarrosel {
+            from {
+                -webkit-transform: rotateY(360deg) translateZ(170px) rotateY(-360deg);
+                -moz-transform: rotateY(360deg) translateZ(170px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -webkit-transform: rotateY(0deg) translateZ(170px) rotateY(0deg);
+                -moz-transform: rotateY(0deg) translateZ(170px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        @-moz-keyframes efeitoCarrosel {
+            from {
+                -moz-transform: rotateY(360deg) translateZ(170px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -moz-transform: rotateY(0deg) translateZ(170px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        .caixa__card {
+            width: 140px;
+            height: 180px;
+            background-color: #5B6670;
+            position: absolute;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            top: 35px;
+            left: 125px;
+            font-size: 9px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+            text-align: center;
+            -webkit-animation-name: efeitoCarrosel;
+            -moz-animation-name: efeitoCarrosel;
+            -webkit-animation-duration: 25s;
+            -moz-animation-duration: 25s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+
+        .caixa__card:hover {
+            
+            box-shadow: 0px 0px 10px #EB0029;
+        }
+        /*YOUTUBE*/
+        .caixa__card.cc__1 {
+            background: linear-gradient(-229deg, #EB0029, #5B6670);
+            -webkit-animation-delay: -25s;
+            -moz-animation-delay: -25s;
+        }
+        /*INSTAGRAM*/
+        .caixa__card.cc__2 {
+
+            background: linear-gradient(-229deg, #EB0029, #F406FF);
+            -webkit-animation-delay: -20s;
+            -moz-animation-delay: -20s;
+        }
+
+        .caixa__card.cc__3 {
+        /*FACEBOOK*/    
+            background: linear-gradient(-229deg, #EB0029, #2E74FF);
+            -webkit-animation-delay: -15s;
+            -moz-animation-delay: -15s;
+        }
+        /*TWITTER*/
+        .caixa__card.cc__4 {
+            background: linear-gradient(-229deg, #EB0029, #15C1F3);
+            -webkit-animation-delay: -10s;
+            -moz-animation-delay: -10s;
+        }
+        /*TIKTOK*/
+        .caixa__card.cc__5 {
+            background: linear-gradient(-229deg, #EB0029, #000000);
+            -webkit-animation-delay: -5s;
+            -moz-animation-delay: -5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
+        <div class="carrosel">
+            <div class="caixa__card cc__1"><a href="https://www.youtube.com/user/banortemovil"><img src="imagenes/slider/youtube.jpeg" style="max-width: 100%; height: auto;"></a></div>
+            <div class="caixa__card cc__2"><a href="https://twitter.com/Banorte_mx"><img src="imagenes/slider/Twitter.jpeg" style="max-width: 100%; height: auto;"></a></div>
+            <div class="caixa__card cc__3"><a href="https://www.instagram.com/banorte_mx/"><img src="imagenes/slider/instagram.jpeg" style="max-width: 100%; height: auto;"></a></div>
+            <div class="caixa__card cc__4"><a href="https://www.facebook.com/banorte"><img src="imagenes/slider/Facebook.jpeg" style="max-width: 100%; height: auto;"></a></div>
+            <div class="caixa__card cc__5"><a href="https://www.tiktok.com/@banorte_mx?_t=8cgzs98CjYL&_r=1"><img src="imagenes/slider/tiktok.jpeg" style="max-width: 100%; height: auto;"></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

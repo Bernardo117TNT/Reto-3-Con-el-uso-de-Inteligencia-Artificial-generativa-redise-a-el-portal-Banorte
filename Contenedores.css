@@ -1,0 +1,51 @@
+
+#back{
+  background-image: url('imagenes/back.png');
+  background-repeat: repeat;
+  height: 110px;
+  width: auto;
+}
+
+}
+#ContPrin {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 10px;
+  margin-left: 0%; 
+}
+
+#Box1 {
+  flex: 1 1 150px;
+  padding: 10px;
+  left: 0;
+}
+
+#atmButton{
+  margin-top: 0;
+  margin-left: 450px;
+  margin-top: -110px;
+  height: auto;
+  width: 75px;
+}
+
+#Logo{
+    width: 400px;
+    height: auto;
+}
+
+#ContSec{
+  align-items: center;
+  background-color: #fff;
+  border: solid;
+  border-color: #fff;
+  margin-top: 90px;
+  height: auto;
+  width: auto;
+  padding: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.30);
+}
+
