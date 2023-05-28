@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+  font-family: Roboto;
+}
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #ddd;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.right {
+  flex: 1;
+  background: url('ruta/a/tu/imagen.jpg') center / cover no-repeat;
+}
+
+.hidden-img {
+  display: none;
+}
+
+#login-header {
+  margin-bottom: 20px;
+  font-weight: 500;
+  animation: fadeIn 2s;
+}
+
+.account-type {
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+}
+
+form input[type=text], form input[type=password] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+form input[type=submit] {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: #FF0000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type=submit]:hover {
+  background: #555;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

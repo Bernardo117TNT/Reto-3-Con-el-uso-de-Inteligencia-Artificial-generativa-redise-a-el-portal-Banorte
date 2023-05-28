@@ -67,12 +67,14 @@ h4 {
     font-weight: lighter;
 }
 
+
 html, body {
     margin: 0;
     padding: 0;
+    height: 1450;
     background-color: #EB0029;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 /*Contenedores del Index, dividiremos la pagina en secciones que nso ayudaran 
@@ -150,6 +152,7 @@ a llevar un mejor control del espacio*/
 }
 
         .card {
+            font-style: justify;
             margin-right: 70px;
             margin-left: 70px;
             display: inline-block;
@@ -184,3 +187,5 @@ a llevar un mejor control del espacio*/
         .card .btn:hover {
             background-color: #cc0000;
         }
+
+ 

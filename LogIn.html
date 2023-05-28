@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" type="text/css" href="csss_login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de inicio de sesión">
+  <title>Iniciar sesión</title>
+  <link rel="icon" href="/ruta/a/tu/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/ruta/a/tu/estilo.css">
+</head>
+<script>
+  document.getElementById('account-type-select').addEventListener('change', function() {
+  document.getElementById('login-header').textContent = 'Iniciar sesión como ' + this.value;
+});
+
+</script>
+<body>
+  <main class="container">
+    <section class="left">
+      <div class="account-type">
+        <label for="account-type-select">Tipo de cuenta:</label>
+        <select id="account-type-select">
+          <option value="PyMe">PyMe</option>
+          <option value="Empresa">Empresa</option>
+          <option value="Gobierno">Gobierno</option>
+          <option value="Preferente">Preferente</option>
+          <option value="Casa de Bolsa">Casa de Bolsa</option>
+        </select>
+      </div>
+      <header>
+        <h1 id="login-header">Iniciar sesión</h1>
+      </header>
+      <form>
+        <div>
+          <label for="username" class="visually-hidden">Nombre de usuario</label>
+          <input type="text" id="username" placeholder="Nombre de usuario" required>
+        </div>
+        <div>
+          <label for="password" class="visually-hidden">Contraseña</label>
+          <input type="password" id="password" placeholder="Contraseña" required>
+        </div>
+        <div>
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+    <section class="right">
+      <img src="ruta/a/tu/imagen.jpg" alt="Imagen de fondo" class="hidden-img">
+    </section>
+  </main>
+
+  <script src="/ruta/a/tu/script.js"></script>
+</body>
+</html>

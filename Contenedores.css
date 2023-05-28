@@ -1,3 +1,8 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 
 #back{
   background-image: url('imagenes/back.png');
@@ -13,6 +18,7 @@
   width: auto;
   padding: 10px;
   margin-left: 0%; 
+
 }
 
 #Box1 {
@@ -27,6 +33,12 @@
   margin-top: -110px;
   height: auto;
   width: 75px;
+  transition: 1s;
+}
+
+#atmButton:hover{
+  transform: translateY(-7px);
+  transition: 1s;
 }
 
 #Logo{
@@ -40,12 +52,12 @@
   border: solid;
   border-color: #fff;
   margin-top: 90px;
-  height: auto;
-  width: auto;
+  height: 1400px;
+  width: 100%;
   padding: 25px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-bottom: -100px; 
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.30);
+  margin-bottom: 20px;
 }
 

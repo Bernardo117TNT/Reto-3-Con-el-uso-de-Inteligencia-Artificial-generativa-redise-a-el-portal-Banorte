@@ -15,6 +15,7 @@
 	<aside id="ContPrin">
 		<div id="Box1">
 			<img src="imagenes/Banorte_logo2x.png" id="Logo">
+		</div>
 	</aside>
 
 <input type="checkbox" id="menu-toggle"/>
@@ -22,14 +23,15 @@
   <label id="burger" for="menu-toggle"></label>
   <ul id="menu">
     <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#">Tarjeta de crédito</a></li>
+    <li><a href="#">Cuenta Enlace</a></li>
+    <li><a href="#">Seguridad Banorte</a></li>
+    <li><a href="LogIn.html">LogIn</a></li>
   </ul>
 </div>
 <a href="Atm.html" id="atmButton"><img src="imagenes/ATMicon.png" style="max-width: 75px; height: auto;"></a>
 
-  <div id="ContSec">
+<div id="ContSec">
 
   	<!--Este apartado pertenece al chatbot -->
 	<script type="text/javascript">
@@ -45,22 +47,167 @@
     document.head.appendChild(t);
   });
 	</script>
+    <script type="text/javascript">
+        [11:04 a. m., 28/5/2023] Bernardo: const finnhub = require('finnhub');
 
+const api_key = finnhub.ApiClient.instance.authentications['api_key'];
+api_key.apiKey = "chpjk9pr01qrhm8qggkgchpjk9pr01qrhm8qggl0"
+const finnhubClient = new finnhub.DefaultApi()
+
+finnhubClient.forexExchanges((error, data, response) => {
+  console.log(data)
+});
+[11:04 a. m., 28/5/2023] Bernardo: [
+  "oanda",
+  "fxcm",
+  "forex.com",
+  "ic markets",
+  "fxpro"
+]
+    </script>
 <!-- Este apartado pertenece las cartas de descripcion general -->
 	<div class="card">
-    <h2>Título de la tarjeta</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+        <h2>Tarjeta de crédito</h2>
+    <p>Un servicio de tarjetas de crédito es proporcionado por un banco o entidad financiera. Tras verificar la solvencia e ingresos del solicitante, se le otorga una tarjeta de crédito con un límite de gasto predefinido. Esta tarjeta puede ser usada para comprar bienes y servicios o realizar avances de efectivo. Cualquier saldo no pagado dentro del período de gracia genera intereses y posibles cargos adicionales.</p>
+    	<img src="imagenes/Tarjeta_credito.jpeg" style="max-width: 300px; height: auto; padding: 5px;">
     </div>	
     <div class="card">
-    <h2>Título de la tarjeta</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+    <h2>Cuenta Enlace Digital</h2>
+    <p>Una cuenta Enlace Digital es un servicio bancario en línea. Permite a los usuarios realizar operaciones como transferencias de fondos, pagos de facturas, depósito directo y chequeo de saldos de forma digital. También ofrece funciones de seguridad y alertas de transacciones, junto con asistencia al cliente digital y herramientas de gestión financiera. Proporcionar soporte al cliente digital, lo que permite a los usuarios obtener ayuda a través de chat en vivo.</p>
+    	<img src="imagenes/Cuenta_Enlace.jpeg" style="max-width: 300px; height: auto; padding: 5px;">
 	</div>
 	<div class="card">
-    <h2>Título de la tarjeta</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
-	</div>
+    <h2>Seguridad Banorte</h2>
+    <p>El incremento en los casos de fraude que afectan a clientes bancarios es notable, con estafadores constantemente explorando técnicas novedosas para apoderarse de tu información personal.
+	Por ello, es vital que estés familiarizado con los métodos de fraude más habituales y sigas algunas sugerencias para evitar caer en sus trampas.
+	Ten presente que tu seguridad es siempre la prioridad y, por eso, es crucial que nunca divulgues datos confidenciales; de hacerlo, estarías otorgándoles acceso a TUS FONDOS</p>
+		<img src="imagenes/seguridad.jpeg" style="max-width: 300px; height: auto; padding: 5px;">
+	</div>	
+	<!-- Este apartado pertenece a las redes sociales -->
 
-<!-- Este apartado pertenece al buscador atm -->
-</div> <!-- fin de seccion dos -->
+        <style type="text/css">
+			.carrosel {
+            position: absolute;
+            -webkit-perspective: 250px;
+            -moz-perspective: 220px;
+            width: 140px;
+            height: 180px;
+            right: -50%;
+            top: 50px;
+            margin-bottom: -500px;
+            position: relative;
+            
+        }
+
+        @-webkit-keyframes efeitoCarrosel {
+            from {
+                -webkit-transform: rotateY(360deg) translateZ(160px) rotateY(-360deg);
+                -moz-transform: rotateY(360deg) translateZ(160px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -webkit-transform: rotateY(0deg) translateZ(160px) rotateY(0deg);
+                -moz-transform: rotateY(0deg) translateZ(160px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        @-moz-keyframes efeitoCarrosel {
+            from {
+                -moz-transform: rotateY(360deg) translateZ(160px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -moz-transform: rotateY(0deg) translateZ(160px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        .caixa__card {
+            width: 140px;
+            height: 180px;
+            background-color: #5B6670;
+            position: absolute;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            top: ;
+            left: ;
+            font-size: 9px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+            text-align: center;
+            -webkit-animation-name: efeitoCarrosel;
+            -moz-animation-name: efeitoCarrosel;
+            -webkit-animation-duration: 25s;
+            -moz-animation-duration: 25s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+
+        .caixa__card:hover {
+            
+            box-shadow: 0px 0px 10px #EB0029;
+        }
+        /*YOUTUBE*/
+        .caixa__card.cc__1 {
+            background: linear-gradient(-229deg, #EB0029, #5B6670);
+            -webkit-animation-delay: -25s;
+            -moz-animation-delay: -25s;
+        }
+        /*INSTAGRAM*/
+        .caixa__card.cc__2 {
+
+            background: linear-gradient(-229deg, #EB0029, #F406FF);
+            -webkit-animation-delay: -20s;
+            -moz-animation-delay: -20s;
+        }
+
+        .caixa__card.cc__3 {
+        /*FACEBOOK*/    
+            background: linear-gradient(-229deg, #EB0029, #2E74FF);
+            -webkit-animation-delay: -15s;
+            -moz-animation-delay: -15s;
+        }
+        /*TWITTER*/
+        .caixa__card.cc__4 {
+            background: linear-gradient(-229deg, #EB0029, #15C1F3);
+            -webkit-animation-delay: -10s;
+            -moz-animation-delay: -10s;
+        }
+        /*TIKTOK*/
+        .caixa__card.cc__5 {
+            background: linear-gradient(-229deg, #EB0029, #000000);
+            -webkit-animation-delay: -5s;
+            -moz-animation-delay: -5s;
+        }
+    </style>
+
+        <div class="carrosel">
+            <a class="caixa__card cc__1" href="https://www.youtube.com/user/banortemovil"><img src="imagenes/slider/youtube.jpeg" style="max-width: 140px; height: 180px;"></a>
+            <a class="caixa__card cc__2" href="https://twitter.com/Banorte_mx"><img src="imagenes/slider/Twitter.jpeg" style="max-width: 140px; height: 180px;"></a>
+            <a class="caixa__card cc__3" href="https://www.instagram.com/banorte_mx"/><img src="imagenes/slider/instagram.jpeg" style="max-width: 140px; height: 180px;"></a>
+            <a class="caixa__card cc__4" href="https://www.facebook.com/banorte"><img src="imagenes/slider/Facebook.jpeg" style="max-width: 140px; height: 180px;"></a>
+            <a class="caixa__card cc__5" href="https://www.tiktok.com/@banorte_mx?_t=8cgzs98CjYL&_r=1"><img src="imagenes/slider/tiktok.jpeg" style="max-width: 140px; height: 180px;"></a>
+        
+ </div> <!-- fin de seccion dos -->
+
 </body>
 </html>
